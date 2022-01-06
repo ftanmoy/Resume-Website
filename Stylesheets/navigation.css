@@ -1,0 +1,198 @@
+a
+{	
+	color:#F5E0CD; 
+	text-decoration:none;
+}
+
+#nav-container
+{
+	top:0; right:10%;
+	position:absolute; 
+	width:80%; height:100%;
+}
+
+#nav
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	align-items:center;
+	margin-left:0;
+	width:100%; height:100%;
+}
+
+.nav-link
+{
+    font-family: 'Lato', sans-serif;
+	font-size:1rem;
+	transition:0.3s ease;
+	color:#F5E0CD;
+	margin-left:3%;
+    text-transform: uppercase;
+	font-weight:bold;
+}
+
+.checkbtn
+{
+	display: block;
+}
+
+#burger ul
+{
+    background-color: rgb(82, 82, 51);
+	position:fixed;
+	width:100%;
+	height:100vh; 
+	top:85px; left:100%;
+	text-align:center;
+	transition:0.3s ease;
+	z-index:99999999;
+	margin:0;
+}
+
+#burger ul li
+{
+	display:block;
+	margin:90px 0;
+	line-height:1.5;
+}
+
+#check
+{
+	display: none;
+}
+
+#check:checked ~ ul
+{
+	left: 0;
+}
+
+.checkbtn
+{
+	position:absolute;
+	top:18%; right:7%;
+	font-size:2rem;
+	z-index:999999999;
+	color:#F5E0CD;
+}
+
+i {
+    color: #F5E0CD;
+}
+
+#burger ul li a
+{
+	font-family: 'Lato', sans-serif;
+    font-weight: 600;
+	font-size:1.2rem;
+	text-transform: uppercase;
+}
+
+
+#header
+{	
+	background-color: rgb(82, 82, 51); 
+	position:fixed; 
+	top:0; left:0; 
+	width:100%; height:5rem;
+	margin:0;
+	z-index:999999;
+    filter: drop-shadow(0 0.3rem 0.75rem #483318);
+}
+
+#logo-container
+{
+	width:120px; 
+	margin-left:10%; 
+    margin-top:25px; 
+	z-index:9999999999;
+	position:fixed;
+}
+
+#logo
+{
+	width:100%; 
+	margin:auto;
+}
+
+#blog-link
+{
+	font-family:orbitron;
+	display:none;
+}
+
+#content-wrap
+{
+	width:100%; min-height:100vh;
+	padding-top:5rem;
+	padding-bottom:38rem;
+}
+
+@media screen and (min-width:1024px) {
+
+	#burger
+	{
+		display: none;
+	}
+
+	.nav-link:hover
+	{	
+		color:#f0c096;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	.checkbtn {
+        position: absolute;
+        top: 23%;
+        right: 7%;
+        font-size: 2rem;
+        z-index: 99999999999;
+        color:#F5E0CD;
+    }
+
+	#logo-container
+	{
+		margin-left:5%;
+	}
+
+	/* #logo
+	{
+		display:none;
+	} */
+	
+	/* #logo-flare
+	{
+		width:60px;
+		top:1%;
+		opacity:100%;
+	}
+	
+	#logo-text
+	{
+		margin-left:65px;
+		display:block;
+	} */
+
+	#nav-container
+	{
+		display:none;
+	}
+	
+	footer
+	{
+		height:32.5rem;
+	}
+
+	.footer-link-container
+	{
+		padding-top:14%;
+	}
+
+	.social-media-icon
+	{
+		margin-top:20%;
+	}
+
+}
