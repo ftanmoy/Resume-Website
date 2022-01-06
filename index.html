@@ -5,8 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Farhan | Artist</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./Stylesheets/index.css">
+        <link rel="stylesheet" href="./Stylesheets/navigation.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap" rel="stylesheet"> 
@@ -23,38 +24,54 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="icon" type="image/png" href="imgs/favicon.png">
+        <script src="https://kit.fontawesome.com/84701ad4bf.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav>
-            <img src="./imgs/logo.png" alt="farhan logo">
-            <ul>
-                <li>
-                    <a href="#">
-                        Web Desgin
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Graphic Design
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Photo & Video
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:tanmoyfarhant5@gmail.com">
-                        Get In Touch
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        
+        <div id="header">
+            <div id="logo-container">
+				
+                <a href="index.html"><img id="logo" src="imgs/logo.png" /></a>
+                
+            </div>
+            
+            <nav id="burger">
+            
+                <input type="checkbox" id="check">
+                
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+                <ul>
+                
+                    <li><a href="web-design.html">Web Design</a></li>
+                    <li><a href="">Graphic Design</a></li>
+                    <li><a href="">Photo & Video</a></li>
+                    <li><a href="mailto: tanmoyfarhant5@gmail.com" target="_blank">Get In Touch</a></li>
+                    <span></span>
+                
+                </ul>
+                
+            </nav>
+            
+            <div id="nav-container">
+            
+                <div id="nav">
+                    
+                    <a class="nav-link" href="web-design.html">Web Design</a>
+                    <a class="nav-link" href="">Graphic Desing</a>
+                    <a class="nav-link" href="">Photo & Video</a>
+                    <a class="nav-link" href="mailto: tanmoyfarhant5@gmail.com" target="_blank">Get In Touch</a>
+                        
+                </div>
+
+            </div>
+        </div>
         
         <article>
-            <header>
-                <h1>Artist and visionary living in <span class="highlight">New York City.</span><br>Currently working for himself and Khan's Tutorial.</h1>
-            </header>
+            
+            <h1>Artist and visionary living in <span class="highlight">New York City.</span><br>Currently seeking opportunities in Front-End Development.</h1>
 
             <div class="about-synopsis">
                 <h3>A Little About Farhan.</h3>
@@ -175,6 +192,25 @@
                         </td>
                     </tr>
                 </table>
+                <!-- <div class="experience-row">
+                    <div class="experience-time-frame">
+                        <p>Oct. 2019 - Present</p>
+                    </div>
+                    <div class="company-position">
+                        <strong>Khan's Tutorial</strong>
+                        <p>Executive Administrator</p>
+                    </div>
+                    <div class="experience-responsibilities">
+                        <ul>
+                            <li>
+                                Day-to-day administrative tasks
+                            </li>
+                            <li>
+                                Provide administrative assistance to the CEO, COO, & other executives.
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
             </div>
 
             <div class="volunteer">
